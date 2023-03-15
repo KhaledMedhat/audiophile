@@ -1,0 +1,17 @@
+.banner-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #191919;
+}
+
+
+
+.title{
+    font-size: 2.5rem;
+    letter-spacing: 0.0894rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+

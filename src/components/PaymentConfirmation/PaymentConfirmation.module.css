@@ -1,0 +1,134 @@
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.confirmation-container h1 {
+    text-transform: uppercase;
+    color: #191919;
+    line-height: 1.125;
+    margin: 0;
+    
+}
+
+.confirmation-logo {
+  margin-bottom: 40px;
+    
+}
+
+.confirmation-text {
+    margin: 0;
+    font-size: 0.9375rem;
+    color: rgba(0,0,0,0.5);
+    margin-top: 20px;
+  }
+
+  .confirmation-info-container{ 
+    width: 444px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 'info grand';
+    margin-top: 35px;
+  }
+
+  .confirmation-info {
+    grid-area: info;
+    background-color: #f1f1f1;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .grand-price-container{ 
+    grid-area: grand;
+    background-color: #191919;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 2rem 2rem;
+    gap: 10px;
+ }
+
+ .grand-title {
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    margin: 0;
+ }
+
+ .grand-price {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 0.9375rem;
+    margin: 0;
+    
+ }
+
+ .products-list{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 2rem 1.5rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ }
+
+
+  .btn {
+    color: #FFFFFF;
+    background-color: #d87d4a;
+    width: 100%;
+    padding: 1em 1em;
+    text-align: center;
+    margin-top: 50px;
+    
+  }
+
+  .btn:hover{
+    background-color: #ffb58a;
+    transition: all ease 0.5s;
+  }
+
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+  }
+    .show-more-less-btn{
+        border: none;
+        outline: none;
+        background: none;
+        color: rgba(0,0,0,0.5);
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 0.75rem;
+        letter-spacing: 0.0625rem;
+        cursor: pointer;
+    
+    }
+
+    .show-more-less-btn:hover{
+        text-decoration: underline;
+
+    }
+
+    .btn-border{
+        border-top: 1px solid #191919;
+    }
+
+    .list-border{
+       background-color: rgba(0, 0, 0, 0.1);
+       width: 170px;
+       display: block;
+       height: 1px;
+       margin: 0 auto;
+       margin-bottom: 20px;
+    }

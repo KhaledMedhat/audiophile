@@ -1,0 +1,76 @@
+ .notification-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .notification  {
+    display: flex;
+    position: relative;
+    padding: 0.7em 2.5em 0.7em 1em;
+    background-color: #38A169;
+    border-radius: 6px;
+    animation-name: left-to-right;
+    animation-duration: 1s;
+    top: 10px;
+    left: 10px; 
+
+  }
+
+  .notification-close-btn{
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 3px;
+    top: 0px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    width: 24px;
+    height: 24px;
+    font-size: 0.875rem;
+  }
+
+  .notification-close-btn:hover{
+    background-color: #329460;
+  }
+
+  .notification-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .notification-msg{
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1rem;
+    
+  }
+
+  /* .toast-item-name {
+    text-transform: uppercase;
+  } */
+
+  .notification-image {
+    width: 20px;
+  }
+
+  @keyframes left-to-right {
+    0%{
+      opacity: 0;
+      left: 0;
+
+    }
+ 
+    100%{
+      opacity: 1;
+      left: 10px; 
+      
+    }
+  }

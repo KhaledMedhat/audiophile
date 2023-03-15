@@ -1,0 +1,18 @@
+.empty-cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem
+
+}
+
+.cart-logo {
+    width: 93px;
+}
+
+.empty-cart-text {
+    color: rgba(0,0,0,0.5);
+    font-size: 1rem;
+    font-weight: bold;
+}

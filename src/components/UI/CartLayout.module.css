@@ -1,0 +1,16 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 3;
+  }
+
+  .overlay {
+    min-width: 377px;
+    position: absolute;
+    background-color: white;
+    border-radius: 13px;
+    right: 220px;
+    top: 130px;
+    z-index: 4;
+  }

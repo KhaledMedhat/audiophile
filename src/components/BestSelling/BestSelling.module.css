@@ -1,0 +1,365 @@
+
+
+.section-container { 
+    margin-top: 50px;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+
+}
+
+.first-best { 
+    width: 100%;
+    background-image: url('/public/images/home/desktop/pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 30%;
+    background-position-x: -247px;
+    background-color: #d87d4a;
+    height: 593px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 13px;
+    animation-name: delay-appearance;
+    animation-duration: 3s;
+}
+
+.first-best-info {
+   margin-right: 70px;
+   margin-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.first-best-info h2 {
+    width: 100px;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 0.55rem;
+    color: white;
+}
+
+.first-best-info p {
+    width: 304px;
+    margin: 0;
+    color: #FFFFFFBF;
+    margin-top: 20px;
+    font-size: 0.95rem;
+    font-weight: 100;
+}
+.first-best-image-desktop{ 
+    width: 410px;
+    position: relative;
+    top: 60px;
+    left: 30px;
+ 
+}
+.first-best-image-tablet{ 
+    position: relative;
+    display: none;
+    width: 197px;
+    margin-bottom: 35px;
+ 
+}
+.first-best-image-mobile{ 
+    width: 170px;
+    position: relative;
+    margin-bottom: 35px;
+    display: none;
+ 
+}
+
+.second-best{ 
+    width: 100%;
+    position: relative;
+    display: flex;
+    animation-name: delay-appearance;
+    animation-duration: 3s;
+    
+}
+
+
+.second-best-info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+.second-best-info h2 {
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #191919;
+}
+
+.second-best-image-desktop {
+    width: 100%;
+    border-radius: 13px;
+}
+.second-best-image-tablet{
+    display: none;
+    width: 100%;
+    border-radius: 13px;
+
+}
+
+.second-best-image-mobile{
+    display: none;
+    width: 100%;
+    border-radius: 13px;
+
+}
+.third-best {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 'image content';
+    column-gap: 30px;
+
+}
+.third-best-image { 
+
+    grid-area: image;
+    animation-name: delay-appearance;
+    animation-duration: 3s;
+
+}
+
+.third-best-image-desktop {
+    border-radius: 13px;
+    width: 100%;
+    height: 100%;
+}
+.third-best-image-tablet {
+    display: none;
+    border-radius: 13px;
+    width: 100%;
+    height: 100%;
+}
+.third-best-image-mobile {
+    display: none;
+    border-radius: 13px;
+    width: 100%;
+    height: 100%;
+}
+
+.third-best-content{
+    grid-area: content;
+    background-color: #f1f1f1;
+    border-radius: 13px;
+    display: flex;
+    position: relative;
+ 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation-name: delay-appearance;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+
+.content h2{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #191919;
+}
+
+
+.first-btn {
+    padding: 1em 2em;
+    width: 165px;
+    margin-top: 40px;
+    background-color: #191919;
+    text-align: center;
+    color: white;
+}
+
+
+.first-btn:hover {
+    background-color: rgb(80, 80, 80);
+    transition: ease 0.5s;
+}
+
+.second-btn {
+    padding: 1em 2em;
+    border: 1px solid #191919;
+    color: #191919;
+    width: 180px;
+    text-align: center;
+    
+}
+
+.second-btn:hover {
+    background-color: #191919;
+    color: white;
+    transition: ease 0.5s;
+}
+
+
+.third-btn {
+    padding: 1em 2em;
+    border: 1px solid #191919;
+    color: #191919;
+    width: 180px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.third-btn:hover {
+    background-color: #191919;
+    color: white;
+    transition: ease 0.5s;
+}
+
+
+
+
+@keyframes delay-appearance {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1
+    }
+  }
+
+
+  .animation{
+    animation-name: delay-appearance;
+   animation-duration: 3s;
+
+
+}
+
+
+@media only screen and (max-width:991px){
+    .section-container{
+        max-width: 950px;
+    }
+    .first-best{
+        background-position: 0px 94%;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 672px;
+    }
+
+    .first-best-image-desktop{
+       display: none;
+    }
+    .first-best-image-tablet{
+        display: block;
+     }
+
+    .first-best-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .first-best-info h2{
+       width: 300px;
+    }
+
+    .second-best-image-desktop{
+        display: none;
+    }
+
+    .second-best-image-tablet{
+        display: block;
+   
+    }
+
+    .third-best-image-desktop {
+      display: none;
+    }
+    .third-best-image-tablet {
+        display: block;
+    }
+
+    .content{
+        top: 40%;
+        left: 10%;
+    }
+}
+
+
+@media only screen and (max-width:479px){
+    .section-container{
+        max-width: 450px;
+        gap: 30px;
+    }
+
+    .first-best{
+        background-position: -125px -140px;
+    }
+
+    .first-best-image-tablet{
+        display: none;
+    }
+
+    .first-best-image-mobile{
+        display: block;
+    }
+    .second-best-image-tablet{
+        display: none;
+   
+    }
+
+    .third-best-image-tablet {
+      display: none;
+    }
+
+    .second-best-image-mobile{
+        display: block;
+   
+    }
+
+    .third-best-image-mobile {
+      display: block;
+    }
+
+    .third-best{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .third-best-content{
+        height: 200px;
+    }
+
+    .content {
+        top: 20%;
+    }
+}
+
+
+
+
+

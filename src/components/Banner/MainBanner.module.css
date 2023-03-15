@@ -1,0 +1,146 @@
+.banner-container {
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+    background-color: #191919;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+   
+}
+
+
+
+.banner-image::after{
+    content: '';
+    position: absolute;
+    background: url('/public/images/home/desktop/image-hero.jpg') center center / contain no-repeat;
+    width: 100%;
+    height: 116%;
+    top: -6rem;
+    left: 0px;
+    z-index: -1;
+    animation-name: delay-appearance;
+    animation-duration: 6s;
+}
+
+
+.banner-content {
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+    animation-name: delay-second-appearance;
+    animation-duration: 3s;
+    padding: 0 1rem;
+  
+}
+
+
+
+
+.new {
+    letter-spacing: 0.625rem;
+    text-transform: uppercase;
+    font-size: .875rem;
+    color: rgba(255,255,255,0.5);
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 1rem;
+   
+}
+
+.title{
+    text-transform: uppercase;
+    max-width: 410px;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: 0.0806rem;
+}
+
+.sub-title {
+    max-width: 350px;
+    font-size: 0.93675rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.5);
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+
+.btn{
+    color: #FFFFFF;
+    width: 166px;
+    background-color:#d87d4a;
+    padding: 1em 2.5em;
+}
+
+.btn:hover{
+    transition: ease 0.5s;
+    background-color: #f8ae83;
+} 
+
+
+@keyframes delay-appearance {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1
+    }
+
+  }
+
+
+
+  
+@keyframes delay-second-appearance {
+    0% {
+      opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    75%{
+        opacity: 0.5;
+    }
+    100% {
+      opacity: 1
+    }
+  }
+
+
+  @media only screen and (max-width:991px){
+    .banner-image::after{  
+        background: url('/public/images/home/tablet/image-hero.jpg') center center / contain no-repeat;
+    }
+
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+  @media only screen and (max-width:479px){
+    .banner-image::after{  
+        background: url('/public/images/home/mobile/image-hero.jpg') center center / contain no-repeat;
+        width: 85%;
+        margin: 0 2rem;
+    }
+    .banner-content{
+      text-align: center;
+      bottom: 2rem;
+    }
+    .title {
+      font-size: 2.25rem;
+    }
+  }

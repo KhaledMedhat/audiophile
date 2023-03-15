@@ -1,0 +1,6 @@
+.overlay {
+    width: fit-content;
+    position: fixed;
+    z-index: 4;
+}
+
