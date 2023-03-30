@@ -3,8 +3,10 @@ import classes from './Products.module.css'
 const Products = (props) => {
     return (
             <section className={classes['grid-container']}> 
-            <div className={classes.image}>
-            <img src={props.image.desktop} alt={props.name} />   
+            <div className={classes.image} >
+            <img className={classes['product-image-desktop']} src={props.image.desktop} alt={props.name} />   
+            <img className={classes['product-image-tablet']} src={props.categoryImage.tablet} alt={props.name} /> 
+            <img className={classes['product-image-mobile']} src={props.categoryImage.mobile} alt={props.name} /> 
             </div>
                 <div className={classes.info}>
                     {props.new && <p className={classes.new}>new product</p>}

@@ -132,3 +132,34 @@
        margin: 0 auto;
        margin-bottom: 20px;
     }
+
+    @media only screen and (max-width:767px){
+      .confirmation-info-container{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+      }
+
+      .confirmation-info{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px
+      }
+
+      .grand-price-container{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      .confirmation-container h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+
+    @media only screen and (max-width:479px){
+      
+
+
+    }

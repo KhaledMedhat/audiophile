@@ -30,8 +30,7 @@ const Checkout = (props) => {
         submitHandler: nameSubmitHandler,
         hasError : nameHasError,
         valueChangeHandler: nameChangeHandler,
-        inputBlurHandler: nameBlurHandler,
-        reset: nameReset
+        inputBlurHandler: nameBlurHandler
     } = useInput(isString)
 
     const {
@@ -40,8 +39,7 @@ const Checkout = (props) => {
         submitHandler: emailSubmitHandler,
         hasError : emailHasError,
         valueChangeHandler: emailChangeHandler,
-        inputBlurHandler: emailBlurHandler,
-        reset: emailReset
+        inputBlurHandler: emailBlurHandler
     } = useInput(isEmail)
 
     const {
@@ -50,8 +48,7 @@ const Checkout = (props) => {
         submitHandler: phoneSubmitHandler,
         hasError : phoneHasError,
         valueChangeHandler: phoneChangeHandler,
-        inputBlurHandler: phoneBlurHandler,
-        reset: phoneReset
+        inputBlurHandler: phoneBlurHandler
     } = useInput(isNumber)
 
     const {
@@ -60,8 +57,7 @@ const Checkout = (props) => {
         submitHandler: addressSubmitHandler,
         hasError : addressHasError,
         valueChangeHandler: addressChangeHandler,
-        inputBlurHandler: addressBlurHandler,
-        reset: addressReset
+        inputBlurHandler: addressBlurHandler
     } =  useInput(isNotEmpty)
 
     const {
@@ -70,8 +66,7 @@ const Checkout = (props) => {
         submitHandler: zipSubmitHandler,
         hasError : zipHasError,
         valueChangeHandler: zipChangeHandler,
-        inputBlurHandler: zipBlurHandler,
-        reset: zipReset
+        inputBlurHandler: zipBlurHandler
     }  = useInput(isNumber)
 
     const {
@@ -80,8 +75,7 @@ const Checkout = (props) => {
         submitHandler: countrySubmitHandler,
         hasError : countryHasError,
         valueChangeHandler: countryChangeHandler,
-        inputBlurHandler: countryBlurHandler,
-        reset: countryReset
+        inputBlurHandler: countryBlurHandler
     } = useInput(isString)
 
     const { 
@@ -90,8 +84,7 @@ const Checkout = (props) => {
         submitHandler: cardNumberSubmitHandler,
         hasError : cardNumberHasError,
         valueChangeHandler: cardNumberChangeHandler,
-        inputBlurHandler: cardNumberBlurHandler,
-        reset: cardNumberReset
+        inputBlurHandler: cardNumberBlurHandler
     }  = useInput(isNumber)
 
     const {
@@ -100,8 +93,7 @@ const Checkout = (props) => {
         submitHandler: cardPINSubmitHandler,
         hasError : cardPINHasError,
         valueChangeHandler: cardPINChangeHandler,
-        inputBlurHandler: cardPINBlurHandler,
-        reset: cardPINReset
+        inputBlurHandler: cardPINBlurHandler
     } = useInput(isNumber)
 
     const {
@@ -110,8 +102,7 @@ const Checkout = (props) => {
         submitHandler: citySubmitHandler,
         hasError : cityHasError,
         valueChangeHandler: cityChangeHandler,
-        inputBlurHandler: cityBlurHandler,
-        reset: cityReset
+        inputBlurHandler: cityBlurHandler
     } = useInput(isString)
 
 

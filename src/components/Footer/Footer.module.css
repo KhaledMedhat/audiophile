@@ -142,17 +142,20 @@
 }
 
 @media only screen and (max-width:991px){
-    .footer-container{
-        max-width: 930px;
-    }
 
     .content-container{
+        max-width: 930px;
         display: flex;
         flex-direction: column;
         gap: 50px;
+        padding-top: 4rem;
     }
     .icons{
         position: static;
+    }
+
+    .content p {
+        max-width: 100%;
     }
 
     .last-container {
@@ -187,7 +190,7 @@
         max-width: 450px;
     }
     .line{
-        left: 175px;
+        left: 170px;
     }
 
     .navbar{

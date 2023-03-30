@@ -283,6 +283,51 @@
   transition: all ease .5s;
 }
 
+@media only screen and (max-width:991px){
+  .checkout-container{
+    max-width: 930px;
+  }
+  .checkout-grid{
+    flex-direction: column;
+  }
+  .checkout-form{
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width:479px){
+  .checkout-container{
+    max-width: 450px;
+    
+  }
+
+  .checkout-form{
+    padding: 1rem 2rem;
+  }
+
+  .billing-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+ .form-control{
+  width: 100%;
+ }
+
+ .shipping-section{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .payment-methods-container{
+  display: flex;
+  flex-direction: column
+;}
+  
+}
 
 
 

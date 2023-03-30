@@ -1,33 +1,26 @@
 import ReactDOM from 'react-dom'
-import classes from './CartLayout.module.css'
+import classes from './ResizeableNavLayout.module.css'
 
 
-
-const Backdrop = (props) => {
-        return (
-        <div className={classes.backdrop} onClick={props.onClick} /> 
+const Backdrop = () => {
+    return (
+        <div className={classes.backdrop}/> 
     )
 }
 
 const ModalOverlay = (props) => {
-    
     return (
-
-               <div className={classes.overlay}>
+        <div className={classes.overlay}>
             <div className={classes.content}>
             {props.children}
             </div>
         </div>
-
-
-
     )
 }
 
-const portalElement = document.getElementById('cart-layout')
+const portalElement = document.getElementById('ResizableNav')
 
-const CartLayout = (props) => {
-
+const ResizeableNavLayout = (props) => {
     return (
         <>
         {ReactDOM.createPortal(<Backdrop onClick={props.onClick} /> , portalElement)}
@@ -37,4 +30,4 @@ const CartLayout = (props) => {
     )
 }
 
-export default CartLayout
+export default ResizeableNavLayout

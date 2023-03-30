@@ -38,7 +38,9 @@ const ProductDetails = () => {
          
             <li key={other.slug}>
                 <div className={classes['other-image']}>
-                <img src={other.image.desktop} alt={other.name} />
+                <img className={classes['other-image-desktop']} src={other.image.desktop} alt={other.name} />
+                <img className={classes['other-image-tablet']} src={other.image.tablet} alt={other.name} />
+                <img className={classes['other-image-mobile']} src={other.image.mobile} alt={other.name} />
                 </div>
                 <p className={classes['other-title']}>{other.name}</p>
                 <Button className={classes['other-btn']} to={`/${other.slug}`} title={'see product'}/>
@@ -82,7 +84,9 @@ const ProductDetails = () => {
             <button className={classes['go-back-btn']} onClick={previousPage}>Go Back</button>
             <div className={classes.product}>
                <div className={classes['product-image']} >
-               <img src={productDetails.image.desktop} alt={productDetails.slug} />
+               <img className={classes['product-image-desktop']} src={productDetails.image.desktop} alt={productDetails.slug} />
+               <img className={classes['product-image-tablet']} src={productDetails.image.tablet} alt={productDetails.slug} />
+               <img className={classes['product-image-mobile']} src={productDetails.image.mobile} alt={productDetails.slug} />
                </div>
                 <div className={classes['product-info']}>
                 {productDetails.new && <p className={classes.new}>new product</p>}
@@ -116,13 +120,19 @@ const ProductDetails = () => {
             </div>
                 <div className={classes['product-images']}>
                     <div className={classes['image-one']}>
-                    <img src={productDetails.gallery.first.desktop} alt={productDetails.slug} />
+                    <img className={classes['image-one-desktop']} src={productDetails.gallery.first.desktop} alt={productDetails.slug} />
+                    <img className={classes['image-one-tablet']} src={productDetails.gallery.first.tablet} alt={productDetails.slug} />
+                    <img className={classes['image-one-mobile']} src={productDetails.gallery.first.mobile} alt={productDetails.slug} />
                     </div>
                     <div className={classes['image-two']}>
-                    <img src={productDetails.gallery.second.desktop} alt={productDetails.slug} />
+                    <img className={classes['image-two-desktop']} src={productDetails.gallery.second.desktop} alt={productDetails.slug} />
+                    <img className={classes['image-two-tablet']} src={productDetails.gallery.second.tablet} alt={productDetails.slug} />
+                    <img className={classes['image-two-mobile']} src={productDetails.gallery.second.mobile} alt={productDetails.slug} />
                     </div>
                     <div className={classes['image-three']} >
-                    <img src={productDetails.gallery.third.desktop} alt={productDetails.slug} />
+                    <img className={classes['image-three-desktop']} src={productDetails.gallery.third.desktop} alt={productDetails.slug} />
+                    <img className={classes['image-three-tablet']} src={productDetails.gallery.third.tablet} alt={productDetails.slug} />
+                    <img className={classes['image-three-mobile']} src={productDetails.gallery.third.mobile} alt={productDetails.slug} />
                 </div>
                     </div>      
                 <div className={classes['you-may-title']}>

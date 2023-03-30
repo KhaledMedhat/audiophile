@@ -17,8 +17,6 @@ const Toast = () => {
       cartCtx.setItemToast([])
     }
   
-    
-
       useEffect(() => {
         const interval = setInterval(() => {
           if(cartCtx.itemToast.length){

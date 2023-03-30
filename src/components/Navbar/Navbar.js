@@ -3,6 +3,7 @@ import { NavLink, Link} from 'react-router-dom'
 import { useContext, useState } from 'react'
 import cartContext from '../../store/cart-context'
 import CartButton from './CartButton'
+import SmallNavbar from './SmallNavbar'
 
 
 
@@ -24,9 +25,10 @@ const Navbar = (props) => {
             <div className={classes.navbar}>
                 <div className={classes['smaller-screen-navbar']}>        
                     {!isOpen ? <img onClick={openAndCloseNavbarHandler} className={classes['hamburger-open-close']} src="/images/shared/tablet/icon-hamburger.svg" alt="" /> : <img onClick={openAndCloseNavbarHandler} className={classes['hamburger-open-close']} src="/images/shared/tablet/icon-close-menu.svg" alt="" /> }
+                    {isOpen && <SmallNavbar/> }
                     <Link to='/'><img className={classes.logo} src="/images/shared/desktop/logo.svg" alt="audiophile-logo" /></Link>
                 </div>
-
+                <Link to='/'><img className={classes['logo-M']} src="/images/shared/desktop/logo.svg" alt="audiophile-logo" /></Link>
             <ul className={classes['navbar-list']}>
                     <li>
                         <NavLink to='/' className={(navData) => navData.isActive ? classes.active : '' }>home</NavLink>

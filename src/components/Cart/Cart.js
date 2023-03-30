@@ -28,7 +28,7 @@ const Cart = (props) => {
     const cartItemCount = cartCtx.items.reduce((currNumber , item) => {
         return currNumber + item.amount
     }, 0)
-
+    
 
     const cartItems = (
         <div className={classes['cart-container']}>
@@ -57,7 +57,7 @@ const Cart = (props) => {
     )
 
     return (
-        <CartLayout   onClick={props.onClose}>
+        <CartLayout isShown={props.isShown}  onClick={props.onClose}>
             {!hasItem ? <EmptyCart /> : cartItems }
         </CartLayout>
     )

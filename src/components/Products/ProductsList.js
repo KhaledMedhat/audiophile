@@ -11,15 +11,16 @@ const ProductsList = () => {
     const URL = useLocation()
     const ProductsData  = data.products
     const filteredProducts = ProductsData.filter(product => {
-        if(URL.pathname == '/headphones'){
+        if(URL.pathname === '/headphones'){
             return product.category === 'headphones'
         }
-        if(URL.pathname == '/speakers'){
+        if(URL.pathname === '/speakers'){
            return product.category === 'speakers'
         }
-        if(URL.pathname == '/earphones'){
+        if(URL.pathname === '/earphones'){
            return product.category === 'earphones'
         }
+        return product
     })
 
     const products = filteredProducts.map(product => {
@@ -31,6 +32,7 @@ const ProductsList = () => {
              image={product.image}
              slug={product.slug}
              new={product.new}
+             categoryImage = {product.categoryImage}
               />
         )
     })

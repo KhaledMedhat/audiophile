@@ -6,19 +6,21 @@ import Headphones from './pages/Headphones'
 import Earphones from './pages/Earphones'
 import Home from './pages/Home'
 import ProductsDetails from './pages/ProductDetails'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import CartProvider from "./store/CartProvider"
 import Cart from './components/Cart/Cart';
 import PaymentConfirmation from './components/PaymentConfirmation/PaymentConfirmation'
 import Toast from './components/Toast/Toast';
 import Checkout from './pages/Checkout'
+import { CSSTransition } from "react-transition-group";
+import './App.css'
+
 
 
 function App() {
 
   const [cartDisplay, setCartDisplay] = useState(false)
   const [confirmation, setConfirmation] = useState(false)
-  
 
   const showConfirmation = () => {
     setConfirmation(!confirmation)
@@ -48,7 +50,7 @@ function App() {
     <CartProvider>
     <Layout onShow={showCart}>
     <Toast/>
-      {cartDisplay && <Cart onClose={closeCart}/>}
+      {cartDisplay && <Cart isShown={cartDisplay} onClose={closeCart}/>}
       {confirmation && <PaymentConfirmation onClose={closeConfirmation} />}
       <Routes>
         <Route path='/' element={<Home />}/>

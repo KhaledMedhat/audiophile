@@ -1,10 +1,13 @@
-import classes from './Categories.module.css'
+import classes from './SmallNavbar.module.css'
+import ResizeableNavLayout from '../UI/ResizeableNavLayout'
 import { Link } from 'react-router-dom'
 
-const Categories = () => {
-    return (
-        <section className={classes['categories-container']}>
-            <ul className={classes['category-list']}>
+
+const SmallNavbar = () => {
+    return ( 
+        <ResizeableNavLayout>
+       <div className={classes['categories-container']}>
+       <ul className={classes['category-list']}>
                 <li className={classes.category}>
                         <Link className={classes['category-link']} to='/headphones'>
                             <div className={classes['category-display-container']}>
@@ -48,8 +51,10 @@ const Categories = () => {
                         </Link>
                 </li>
             </ul>
-        </section>
+       </div>
+        </ResizeableNavLayout>
+
     )
 }
 
-export default Categories
+export default SmallNavbar

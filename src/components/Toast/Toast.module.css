@@ -15,6 +15,7 @@
     border-radius: 6px;
     animation-name: left-to-right;
     animation-duration: 1s;
+    /* animation: left-to-right 0.5; */
     top: 10px;
     left: 10px; 
 
@@ -52,23 +53,18 @@
     font-size: 1rem;
     
   }
-
-  /* .toast-item-name {
-    text-transform: uppercase;
-  } */
-
   .notification-image {
     width: 20px;
   }
 
   @keyframes left-to-right {
-    0%{
+  from{
       opacity: 0;
       left: 0;
 
     }
  
-    100%{
+    to{
       opacity: 1;
       left: 10px; 
       
